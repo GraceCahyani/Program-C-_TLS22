@@ -1,0 +1,25 @@
+// Program untuk menghitung untung dan rugi
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  int modal, pendapatan, untung, rugi;
+  
+  cout << "Jumlah modal :";
+  cin >> modal;
+  cout << "Jumlah pendapatan : ";
+  cin >> pendapatan;
+  
+  if(pendapatan > modal){
+    untung = pendapatan - modal;
+    cout << "Anda mendapatan keuntungan sebesar : " << untung << endl;
+  } else if (pendapatan < modal){
+    rugi = pendapatan - modal;
+    cout << "Anda mengalami kerugian sebesar: " << rugi << endl;
+  } else {
+    cout << "Anda tidak mendapatkan keuntungan ataupun kerugian";
+  }
+
+}
